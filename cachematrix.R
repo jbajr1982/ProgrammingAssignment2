@@ -1,6 +1,5 @@
 
-## Create a cacheMatrix object for an invertale matrix.
-
+# Create a cacheMatrix object for an invertale matrix.
 makeCacheMatrix <- function(x = matrix()) {
   cachedInverse <- NULL
   set <- function(y) {
@@ -16,8 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Return the inverse of an cacheMatrix object
-
+# Return the inverse of an cacheMatrix object
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   invFunc <- x$getInverse()
