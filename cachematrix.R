@@ -1,14 +1,14 @@
 
 # Create a cacheMatrix object for an invertale matrix.
 makeCacheMatrix <- function(x = matrix()) {
-  cachedInverse <- NULL
+  cached_inv <- NULL
   set <- function(y) {
     x <<- y
-    cachedInverse <<- NULL
+    cached_inv <<- NULL
   }
   get <- function() x
-  stinv <- function(inverse) cachedInverse <<- inverse
-  gtinv <- function() cachedInverse
+  stinv <- function(inverse) cached_inv <<- inverse
+  gtinv <- function() cached_inv
   list(set = set, get = get,
        setInverse = stinv,
        getInverse = gtinv)
